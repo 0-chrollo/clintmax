@@ -68,9 +68,9 @@
         <style>
 
             .hero {
-                height: 400px;
+                height: 550px;
                 background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                            url('hero.jpg') center/cover;
+                            url('clibg.webp') center/cover;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -107,7 +107,7 @@
             }
         
             @media (max-width: 768px) {
-                .hero { height: 300px; }
+                .hero { height: 400px; }
                 h1 { font-size: 3rem; }
             }
         </style>
@@ -623,50 +623,211 @@
 
 
 
+<!-- ===== FOOTER ===== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  .site-footer {
+    background: #0a1f3c;
+    padding: 50px 36px 24px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer-brand-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.3px;
+  }
+
+  .footer-brand-name span {
+    color: #e8511a;
+  }
+
+  .footer-tagline {
+    font-size: 13px;
+    color: #8faec8;
+    line-height: 1.7;
+    margin: 0 0 20px 0;
+    max-width: 220px;
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 10px;
+  }
+
+  .footer-social-link {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8faec8;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .footer-social-link:hover {
+    border-color: #e8511a;
+    color: #e8511a;
+  }
+
+  .footer-col-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 13.5px;
+    color: #8faec8;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover {
+    color: #e8511a;
+  }
+
+  .footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    color: #8faec8;
+    line-height: 1.5;
+  }
+
+  .footer-contact-item i {
+    color: #e8511a;
+    font-size: 14px;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 22px;
+    gap: 6px;
+  }
+
+  .footer-copy {
+    font-size: 12.5px;
+    color: #4d6a85;
+    margin: 0;
+  }
+
+  .footer-credit {
+    font-size: 12.5px;
+    color: #4d6a85;
+    margin: 0;
+  }
+
+  .footer-credit a {
+    color: #e8511a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  @media (max-width: 600px) {
+    .site-footer {
+      padding: 40px 24px 20px;
+    }
+
+    .footer-top {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
 
 
-  <footer class="footer">
-    <div class="footer-container">
-        <!-- Company Info -->
-        <div class="footer-section">
-            <h3>Damane Services</h3>
-            <p>Your trusted partner for comprehensive security solutions across Johannesburg, Sandton, Midrand, Albarton, and Roodepoort. Professional CCTV, alarm systems, electric fencing, and gate automation you can rely on.</p>
-        </div>
+  }
+</style>
 
-        <!-- Quick Links -->
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
+<footer class="site-footer">
+  <div class="footer-top">
 
-        <!-- Contact Info -->
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span><i class="fa-solid fa-phone"></i></span>
-                    <a href="tel:+27671388607">067 138 8607</a>
-                </div>
-                <div class="contact-item">
-                    <span><i class="fa-brands fa-whatsapp"></i></span>
-                    <a href="https://wa.me/27671388607">WhatsApp: 067 138 8607</a>
-                </div>
-                <div class="contact-item">
-                    <span><i class="fa-solid fa-envelope"></i></span>
-                    <a href="mailto:info@damaneservices.co.za">info@damaneservices.co.za</a>
-                </div>
-            </div>
-        </div>
+    <div class="footer-brand">
+      <p class="footer-brand-name">Steel<span>Structure</span></p>
+      <p class="footer-tagline">Custom steel structures built for South African conditions. Agricultural, commercial and industrial.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="footer-social-link"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
     </div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2026 Damane Services. All rights reserved.</p>
+    <div class="footer-nav">
+      <p class="footer-col-title">Quick Links</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
+
+    <div class="footer-contact">
+      <p class="footer-col-title">Contact Us</p>
+      <ul class="footer-contact-list">
+        <li class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+27 82 577 5010</span>
+        </li>
+        <li class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>info@steelstructure.co.za</span>
+        </li>
+        <li class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>South Africa</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2025 SteelStructure. All rights reserved.</p>
+    <p class="footer-credit">Website by <a href="www.unitwebs.co.za">Unitwebs</a></p>
+  </div>
 </footer>
-
+<!-- ===== END FOOTER ===== -->
 
 
 
