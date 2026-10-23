@@ -433,7 +433,11 @@
 
 </section>
 
-
+<script>
+    if (new URLSearchParams(window.location.search).get('sent') === 'true') {
+        document.getElementById('form-success').style.display = 'block';
+    }
+    </script>
 
 
 
