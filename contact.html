@@ -367,43 +367,56 @@
             <!-- CONTACT FORM -->
             <div class="contact-form">
                 <h2>Get in touch</h2>
-                <form>
-    
+            
+                <p id="form-success" style="display:none; color:green; margin-bottom:16px;">
+                    Thank you! Your message has been sent. We'll be in touch shortly.
+                </p>
+            
+                <form action="https://formsubmit.co/clintmaxct@gmail.com" method="POST">
+            
+                    <!-- FormSubmit Config -->
+                    <input type="hidden" name="_subject" value="New Enquiry from Website">
+                    <input type="hidden" name="_next" value="https://www.clintmax.co.za/contact.html?sent=true">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <!-- Spam honeypot: leave hidden and empty -->
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            
                     <div class="form-group">
-                        <input type="text" id="fullname" placeholder="Full Name" required>
+                        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
                     </div>
-    
+            
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Email Address" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
                     </div>
-    
+            
                     <div class="form-group">
-                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                     </div>
-    
+            
                     <div class="form-group">
                         <label for="service">What can we help you with?</label>
-                        <select id="service" required>
+                        <select id="service" name="service" required>
                             <option value="">Select a service...</option>
                             <option value="refrigerator-repair">Refrigerator Repair</option>
                             <option value="freezer-repair">Freezer Repair</option>
                             <option value="cold-room-repair">Cold Room Repair</option>
-                            <option value="chiller-freezer-room">Chiller & Freezer Room Service</option>
-                            <option value="ac-repair">Air Conditioner Repair & Maintenance</option>
+                            <option value="chiller-freezer-room">Chiller &amp; Freezer Room Service</option>
+                            <option value="ac-repair">Air Conditioner Repair &amp; Maintenance</option>
                             <option value="ice-maker-repair">Ice Maker Repair</option>
                             <option value="home-appliance-repair">General Home Appliance Repair</option>
                             <option value="buy-broken-appliance">Sell Us Your Broken Appliance</option>
                         </select>
                     </div>
-    
+            
                     <div class="form-group">
-                        <input type="text" id="location" placeholder="Location (e.g., Pretoria, Johannesburg)" required>
+                        <input type="text" id="location" name="location" placeholder="Location (e.g., Pretoria, Johannesburg)" required>
                     </div>
-    
+            
                     <div class="form-group">
-                        <textarea id="message" placeholder="Tell us more about your repair needs or any questions you have"></textarea>
+                        <textarea id="message" name="message" placeholder="Tell us more about your repair needs or any questions you have"></textarea>
                     </div>
-    
+            
                     <button type="submit" class="submit-btn">
                         <svg style="width: 18px; height: 18px; margin-right: 8px; vertical-align: middle;" viewBox="0 0 24 24" fill="white">
                             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
@@ -412,6 +425,9 @@
                     </button>
                 </form>
             </div>
+
+
+            
         </div>
     </div>
 
